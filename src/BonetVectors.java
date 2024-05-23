@@ -1,18 +1,4 @@
-package utils;
-
-public class BonetEines {
-    private static final int MAX = 100;
-    private static final int MIN = 1;
-    private static final int MIN_NEG = -100;
-
-    public static double BonetAleatoriAmbNegatius() {
-        return  Math.random()*(MAX-(MIN_NEG))+(MIN_NEG);
-    }
-
-}
-
-
-public class BonetMostrarVector {
+public class BonetVectors.java {
     public static void main(String[] args) {
         final int VALOR_MINIM = 1;
         final int VALOR_MAXIM = 100;
@@ -24,10 +10,10 @@ public class BonetMostrarVector {
         Scanner teclat = new Scanner(System.in);
         // do while per controlar que l'usuari no entri un valor que no sigui un enter
         do {
-            System.out.print("Entra el vector: ");
+            System.out.print("Entra la mida del vector a omplir: ");
             try {
                 midaDelVector = teclat.nextInt();
-                // if per controlar que l'usuari no entri una altra cosa que no sigui un vector
+                // if per controlar que l'usuari no entri un valor negatiu
                 if(midaDelVector < 0) {
                     System.out.println("\tERROR!! Entra un enter positiu!");
                     midaDelVector = CODI_ERROR;
@@ -40,21 +26,9 @@ public class BonetMostrarVector {
             }
         } while (midaDelVector == CODI_ERROR);
 
-        System.out.println: midaDelVector:
 
-    }
-}
+        int[] vectorEnters = new int[midaDelVector];
 
-
-
-
-
-
-
-
-
-
-
-
-
+        // for per recórrer i obtenir tots els elements del vector
+        for (int i = 0; i < midaDelVector; i++)
 

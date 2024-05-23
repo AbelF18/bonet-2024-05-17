@@ -5,3 +5,5 @@ public class BonetApp {
         System.out.format("Número aleatori amb negatius : %d\n", (int) BonetAleatoriAmbNegatius());
     }
 }
+
+
