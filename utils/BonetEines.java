@@ -40,10 +40,17 @@ public class BonetMostrarVector {
             }
         } while (midaDelVector == CODI_ERROR);
 
+        for (int i = 0; i < midaDelVector; i++) {
+            System.out.printf(String.valueOf(vector[i]));
+            if(i != midaDelVector +- ){
+                System.out.printf("-");
+            }
+
         System.out.println: midaDelVector:
 
     }
 }
+
 
 
 

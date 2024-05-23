@@ -12,7 +12,22 @@ public class Pilota {
     }
 
     public void setNomPropietari(String nomPropietariRebut){
-
+        String nom1;
+        String nom2;
+        System.out.print("Entra el nom del nou propietari de la pilota: ");
+        String nom2 = teclat.nextLine();
+        nom1.setNomPropietarinom2
 
     }
+}
+
+
+public class AppPilota{
+    public static void main (String)[] args){
+    Pilota pilotaJoan = new Pilota ("Joan");
+    Pilota pilotaAnonima;
+    Pilota pilotaJoan = new Pilota ("Josep");
+    System.out.print()
+    }
+
 }

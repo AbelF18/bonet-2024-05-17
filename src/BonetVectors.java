@@ -1,3 +1,5 @@
+import static utils.BonetEines.BonetAleatoriAmbNegatius;
+
 public class BonetVectors.java {
     public static void main(String[] args) {
         final int VALOR_MINIM = 1;
@@ -8,12 +10,12 @@ public class BonetVectors.java {
         int midaDelVector = 0;
 
         Scanner teclat = new Scanner(System.in);
-        // do while per controlar que l'usuari no entri un valor que no sigui un enter
+
         do {
             System.out.print("Entra la mida del vector a omplir: ");
             try {
                 midaDelVector = teclat.nextInt();
-                // if per controlar que l'usuari no entri un valor negatiu
+
                 if(midaDelVector < 0) {
                     System.out.println("\tERROR!! Entra un enter positiu!");
                     midaDelVector = CODI_ERROR;
@@ -27,8 +29,17 @@ public class BonetVectors.java {
         } while (midaDelVector == CODI_ERROR);
 
 
+        for (int i = 0; i < midaDelVector; i++) {
+            System.out.printf(String.valueOf(vector[i]));
+            if(i != midaDelVector -1 ){
+                System.out.printf("-");
+            }
+        }
+
+        aleatoriAmbNegatius();
         int[] vectorEnters = new int[midaDelVector];
 
-        // for per recórrer i obtenir tots els elements del vector
-        for (int i = 0; i < midaDelVector; i++)
+        System.out.format("S'ha rebut : [midaDelVector1]%d\n", (int) );
+
+        System.out.format("S'ha rebut : [midaDelVector2] %d\n", (int) );
 
