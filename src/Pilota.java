@@ -27,7 +27,11 @@ public class AppPilota{
     Pilota pilotaJoan = new Pilota ("Joan");
     Pilota pilotaAnonima;
     Pilota pilotaJoan = new Pilota ("Josep");
-    System.out.print()
+    System.out.print("1 = " + pilotaJoan.getNomPropietari() + "\n");
+    System.out.print("2 = " + pilotaJosep.getNomPropietari() + "\n");
+    pilotaJoan-setNomPropietari("Jordi");
+    System.out.print("3 = " + pilotaJoan2.getNomPropietari() + "\n");
+    System.out.print("4 = " + pilotaAnonim.getNomPropietari() + "\n");
     }
 
 }

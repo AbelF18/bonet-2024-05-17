@@ -28,6 +28,19 @@ public class BonetVectors.java {
             }
         } while (midaDelVector == CODI_ERROR);
 
+        public static int demanaEnterPositiu(String missatgeAMostrar, String missatgeDError) {
+            int enterPositiuLlegit = 0;
+            do{
+                enterPositiuLlegit = demanaEnter(missatgeAMostrar, missatgeDError);
+                if(enterPositiuLlegit < 0) {
+                    System.out.println(missatgeDError);
+                    enterPositiuLlegit = CODI_ERROR;
+                }
+            } while (enterPositiuLlegit == CODI_ERROR);
+            return enterPositiuLlegit;
+        }
+
+
 
         for (int i = 0; i < midaDelVector; i++) {
             System.out.printf(String.valueOf(vector[i]));
